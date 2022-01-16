@@ -1,0 +1,98 @@
+
+body{
+    background: #92A9BD;
+}
+
+h1{
+    font-size: 50px;
+    padding: 30px;
+ 
+        
+        text-align: center;
+        background:black;
+        color: white;
+        border: 5px solid white;
+        font-size: 30px;
+      
+}
+/* img{
+    width: 200px;
+    height: 200px;
+    background: black;
+  
+} */
+a{
+    font-size: 30px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: #7C99AC;
+
+}
+.mcq{
+    padding: 20px;
+}
+.form{
+    width: 800px;
+    
+        border: 5px solid white;
+        padding: 20px;
+        margin: 20px;
+        background-color: #D3DEDC;
+        font-weight: 500;
+      
+}
+
+.display{
+
+        width: 800px;
+        border: 5px solid white;
+        padding: 50px;
+        margin: 20px;
+        background-color: #D3DEDC;
+        font-weight: 500;
+      
+}
+#user_input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+   
+}
+#display{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: bold;
+    color:#1A5F7A;
+    font-weight: 500;
+}
+td{
+    padding: 20px;
+}
+
+
+p{
+    font-weight: 500;
+}
+
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  
+  /* The element to apply the animation to */
+  

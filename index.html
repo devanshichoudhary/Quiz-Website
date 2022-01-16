@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  <script>
+   
+    var loadFile1 = function(event) {
+      var image = document.getElementById('output1');
+      image.src = URL.createObjectURL(event.target.files[0]);
+     
+    };
+  
+    var loadFile2 = function(event) {
+      var image = document.getElementById('output2');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile3 = function(event) {
+      var image = document.getElementById('output3');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile4 = function(event) {
+      var image = document.getElementById('output4');
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  
+    function showInput() {
+         document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+                    
+      
+     }
+     
+      
+  </script>
+  
+    
+</head> 
+<body>
+  <center>
+    <h1>QUIZ WEBSITE</h1>
+    <div class="form">
+      <div class="que">
+        <form>
+          <h1 style="background-color: #1A5F7A;">Upload your question here👇</h1>
+        <label><b style="font-size: 30px;"> Question:</b></label>
+        <input type="text" name="message" id="user_input">
+      
+      <div class="option">
+        <h1 style="background-color: #1A5F7A;">Options:</h1>
+        
+        <table>
+          <tr>
+            <td><p><input type="file"  accept="image/*" name="image1" id="file1"  onchange="loadFile1(event)" style="display: none;"></p>
+             <a href=""><p><label for="file1" style="cursor: pointer;"> Option A</label></p></a> 
+            </p></td>
+      
+              <td><p><input type="file"  accept="image/*" name="image2" id="file2"  onchange="loadFile2(event)" style="display: none;"></p>
+               <a href=""> <p><label for="file2" style="cursor: pointer;"> Option B</label></p></a>
+              </p></td>
+      
+                <td> <p><input type="file"  accept="image/*" name="image3" id="file3"  onchange="loadFile3(event)" style="display: none;"></p>
+                 <a href=""> <p><label for="file3" style="cursor: pointer;"> Option C</label></p></a>
+               </p></td>
+      
+                  <td><p><input type="file"  accept="image/*" name="image4" id="file4"  onchange="loadFile4(event)" style="display: none;"></p>
+                  <a href=""><p><label for="file4" style="cursor: pointer;">Option D</label></p></a>  
+                  </p></td>
+          </tr>
+        </table> 
+      </form>
+      
+      </div>
+      
+      <input style="font-size: 30px;" value="Upload"  type="submit" onclick="showInput();"><br/>
+      
+      
+      </div>  
+    </div>
+    
+    
+<div class="display"><label><h1 style="background-color: #1A5F7A;">Choose the correct option: </h1> </label>
+  <p><span id='display'></span></p>
+  <div class="mcq">
+    <input type="radio"><img id="output1" width="200" /><br>
+    <input type="radio" name="1"><img id="output2" width="200" /><br>
+    <input type="radio" name="1"><img id="output3" width="200" /><br>
+   <input type="radio" name="1"> <img id="output4" width="200" /><br>
+  </div>
+  
+   <input style="font-size: 20px; padding: 10px;" type="submit">
+    
+ 
+  </div>
+  
+</div>
+    
+    </center>
+     
+        
+        
+  
+ 
+</body>   
+</html>
